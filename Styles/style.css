@@ -1,0 +1,93 @@
+
+/* popular section styles start */
+
+.popular-tour-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.description-container p{
+    font-size: 18px;
+}
+.tour-title{
+    color: #131318;
+    font-size: 45px;
+    font-weight: bold;
+}
+.tour-img{
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.primary-btn{
+    width: 150px;
+    height: 40px;
+    background-color: #FF5400;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* popular section styles end */
+
+/* footer section styles start */
+
+.footer-container{
+    width: 100%;
+    height: 390px;
+    background-color: rgba(19, 19, 24, 0.05);
+    margin-top: 50px;
+}
+.footer-title-container{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 38px;
+    height: 42px;
+    margin-top: 80px;
+}
+.logo-title{
+    font-size: 30px;
+    color: #131318;
+    font-weight: bolder;
+    margin-top: 80px;
+    margin-left: 15px;
+}
+.title-color{
+    color: #FF5400  ;
+}
+.footer-description{
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 15px;
+    line-height: 23px;
+    margin-top: 0px;
+}
+.footer-icon{
+    text-align: center;
+}
+hr{
+    background: rgba(19, 19, 24, 0.10);
+    width: 60%;
+    margin-top: 30px;
+}
+.footer-icon img{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.copyright-container{
+    margin-bottom: 100px;
+}
+.copyright-title{
+    color: #131318;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+/* footer section styles end */
