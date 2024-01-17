@@ -1,15 +1,22 @@
 * {
 
     padding: 0%;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0%;
+    font-family: sans-serif;
     box-sizing: border-box;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .navbar-logo {
@@ -48,7 +55,7 @@
 /* banner section --------- */
 .banner-container {
     position: relative;
-    background: url('Images/Group13.png');
+    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('.Images/Group-13.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -84,10 +91,11 @@
 .input-container {
     position: absolute;
     top: 225px;
-    left: 140px;
+    left: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .input-container select {
@@ -124,26 +132,35 @@
 
 /* popular section styles start */
 
-.popular-tour-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.tour-container {
+
+    display: grid;
+    grid: 360px / auto auto;
+    grid-gap: 10px;
+    margin-top: 50px;
 }
-.description-container p{
-    font-size: 18px;
+
+.description-container {
+    font-size: 12px;
+
 }
-.tour-title{
+
+.tour-title {
     color: #131318;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: bold;
+    margin-bottom: 13px;
 }
-.tour-img{
-    width: 400px;
-    height: 400px;
-    margin-top: 30px;
-    margin-left: 10px;
+
+.tour-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+
 }
-.primary-btn{
+
+.primary-btn {
     width: 150px;
     height: 40px;
     background-color: #FF5400;
@@ -152,60 +169,337 @@
     color: #FFF;
     font-size: 15px;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 /* popular section styles end */
 
+
+/* destination section ---- */
+.destination {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.destination small {
+    opacity: 0.6;
+}
+
+.destination h1 {
+    margin-bottom: 15px;
+}
+
+.item1 {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.item-text {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: #fff;
+}
+
+.item2 {
+    position: relative;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.item3 {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+
+.item4 {
+    position: relative;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+
+.item5 {
+    position: relative;
+    grid-column-start: 10;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+
+.item6 {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 12;
+}
+
+.item7 {
+    position: relative;
+    grid-column-start: 5;
+    grid-column-end: 12;
+    grid-row-start: 8;
+    grid-row-end: 12;
+}
+
+.item-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+/* destination section ---- */
+
+/* service section  */
+
+.service-container {
+    text-align: center;
+}
+
+.service-container h1 {
+    margin-bottom: 15px;
+}
+
+.service-container small {
+    opacity: 0.6;
+}
+
+.why-chose {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.why-chose small {
+    opacity: 0.5;
+}
+
+.handpicked {
+    box-shadow: 5px 5px 5px 5px #FFF;
+    height: 200px;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: #f9efe5;
+}
+
+.service-img {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.world-service {
+    box-shadow: 5px 5px #FFF;
+    height: 200px;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: #f4fdff;
+}
+/* .best-guarantee-container{
+    width: 1000px;
+    border: 1px solid red;
+} */
+
+.best-guarantee {
+    box-shadow: 5px 5px #FFF;
+    height: 200px;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: #fef6f6;
+    margin: 0 auto;
+}
+
+/* service section  */
+
+/* form section ---- */
+.newslatter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.travel-save img {
+    margin-top: 60px;
+    width: 500px;
+    height: 280px;
+    border-radius: 10px;
+
+}
+
+.subscribe {
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 280px;
+    width: 330px;
+    border: 1px solid #FF5400;
+    border-radius: 5px
+}
+
+.subscribe small {
+    opacity: 0.5;
+}
+
+.subscribe h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.subscribe input {
+    padding: 7px;
+    margin: 4px;
+    width: 280px;
+    border: none;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+
+#submit-btn {
+    background-color: #FF5400;
+    color: #FFF;
+    border: none;
+}
+
+.subscribe hr {
+    width: 280px;
+    margin-left: -1px;
+    margin-bottom: 10px;
+}
+
+.travel-save {
+    position: relative;
+}
+
+.save-up {
+    position: absolute;
+    top: 60%;
+    left: 53%;
+    transform: rotate(-30deg);
+    height: 80px;
+    width: 230px;
+    background-color: #FF5400;
+    color: #FFF;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.save-up h4 {
+    padding-top: 15px;
+}
+
+/* form section ---- */
+
+/* our plan --- */
+
+.plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.plan-container h4 {
+    margin-bottom: 10px;
+}
+
+.plan-container img {
+    border-radius: 8px;
+}
+
+.Multi-day {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* our plan --- */
+
 /* footer section styles start */
 
-.footer-container{
+.footer-container {
     width: 100%;
     height: 390px;
     background-color: rgba(19, 19, 24, 0.05);
     margin-top: 50px;
+    margin-left: 0%;
+    margin-right: 0%;
 }
-.footer-title-container{
+
+.footer-title-container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.logo{
+
+.logo {
     width: 38px;
     height: 42px;
     margin-top: 80px;
 }
-.logo-title{
-    font-size: 30px;
+
+.logo-title {
+    font-size: 20px;
     color: #131318;
     font-weight: bolder;
     margin-top: 80px;
     margin-left: 15px;
 }
-.title-color{
-    color: #FF5400  ;
+
+.title-color {
+    color: #FF5400;
 }
-.footer-description{
-    color: #5A5A5D;
+
+.footer-description {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-size: 15px;
+    color: #5A5A5D;
+    font-size: 10px;
     line-height: 23px;
     margin-top: 0px;
 }
-.footer-icon{
+
+.footer-icon {
     text-align: center;
 }
-hr{
+
+hr {
+    margin-left: 170px;
     background: rgba(19, 19, 24, 0.10);
     width: 60%;
     margin-top: 30px;
 }
-.footer-icon img{
+
+.footer-icon img {
     margin-left: 25px;
     margin-top: 20px;
 }
-.copyright-container{
+
+.copyright-container {
     margin-bottom: 100px;
 }
-.copyright-title{
+
+.copyright-title {
     color: #131318;
     font-size: 15px;
     text-align: center;
@@ -214,3 +508,183 @@ hr{
 }
 
 /* footer section styles end */
+
+/* --responsive -------- */
+@media only screen and (max-width: 570px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .navbar-logo h1 {
+        font-size: 19px;
+    }
+
+    .navbar-text {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .banner-container {
+        position: relative;
+        height: 550px;
+        width: 100%;
+    }
+
+    .banner-text h1 {
+        font-size: 17px;
+    }
+
+    .banner-text {
+        position: absolute;
+        left: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .bg {
+        position: absolute;
+        left: 25px;
+        height: 280px;
+        width: 280px;
+
+    }
+
+    .input-container {
+        position: absolute;
+        right: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-right: 70px;
+    }
+
+    .input-container select {
+        height: 50px;
+        width: 240px;
+    }
+
+    .input-container input {
+        height: 50px;
+        width: 240px;
+    }
+
+    .input-container button {
+        height: 50px;
+        width: 240px;
+    }
+
+    .tour-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-image {
+        height: 200px;
+        width: 400px;
+    }
+
+    .why-chose {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .handpicked {
+        margin-top: 10px;
+        height: 220px;
+    }
+
+    .world-service {
+        height: 220px;
+    }
+
+    .best-guarantee {
+        height: 220px;
+    }
+
+    .newslatter-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subscribe {
+        height: 320px;
+        width: 400px;
+    }
+
+    .travel-save img {
+        height: 330px;
+        width: 400px;
+    }
+
+    .subscribe input {
+        padding: 12px;
+        margin: 4px;
+        width: 320px;
+        border: none;
+        background-color: #f3f3f3;
+        border-radius: 5px;
+    }
+
+    #submit-btn {
+        background-color: #FF5400;
+        color: #FFF;
+        border: none;
+    }
+
+    .subscribe hr {
+        width: 330px;
+        margin-left: -1px;
+        margin-bottom: 10px;
+    }
+
+    .save-up {
+        position: absolute;
+        top: 63%;
+        left: 40%;
+        transform: rotate(-30deg);
+
+    }
+
+    .plan-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plan-container img {
+        width: 400px;
+    }
+
+
+    hr {
+        margin-left: 60px;
+    }
+
+
+    .footer-description {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
